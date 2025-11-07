@@ -118,6 +118,25 @@
     color: #555;
     /* text-align: center; optional since parent is centered */
   }
+  /* Responsive YouTube video */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px; /* optional, keeps it from getting too large on big screens */
+  margin: 20px auto; /* centers it horizontally */
+  aspect-ratio: 16 / 9; /* maintains proper video ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 10px;
+}
+
 </style>
 </head>
 <body>

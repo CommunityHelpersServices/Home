@@ -118,6 +118,25 @@
     color: #555;
     /* text-align: center; optional since parent is centered */
   }
+  /* Responsive Google Map */
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* optional: controls maximum size */
+  margin: 20px auto; /* centers the map */
+  aspect-ratio: 4 / 3; /* keeps proper map proportions */
+}
+
+.map-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 0;
+  border-radius: 10px;
+}
+
 </style>
 </head>
 <body>
@@ -165,7 +184,14 @@
     <h4>Owner's Email: billyrayneal@yahoo.com</h4>
       <h4>Location: 111 N First Ave</h4>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d2659.1338534468555!2d-78.4810495!3d35.7883066!3m2!1i1024!2i768!4f13.1!2m1!1scommunity%20helper%20services%20center!5e1!3m2!1sen!2sus!4v1762547596718!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d2659.1338534468555!2d-78.4810495!3d35.7883066!3m2!1i1024!2i768!4f13.1!2m1!1scommunity%20helper%20services%20center!5e1!3m2!1sen!2sus!4v1762547596718!5m2!1sen!2sus"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
   </div>
    <style="text-align: center; padding: 20px; font-family: Garamond, serif; color: #333; background: rgba(255,255,255,0.8); margin-top: 40px;">
